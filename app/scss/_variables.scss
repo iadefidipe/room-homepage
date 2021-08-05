@@ -1,0 +1,25 @@
+// ========== Automatically Convert Pixels ==> Rems
+@function rem($size) {
+    $remSize: $size / 16;
+    @return #{$remSize}rem;
+}
+
+
+// * Color
+$clr-dark-gray: hsl(0, 0%, 63%);
+$clr-black: hsl(0, 0%, 0%);
+$clr-white: hsl(0, 0%, 100%);
+$clr-vdark-gray: hsl(0, 0%, 27%);
+
+
+// * fonts
+
+$font-main:  'Spartan', sans-serif;
+$font-sz: rem(12);
+
+$weight-med: 500;
+$weight-semi-bold: 600;
+$weight-bold: 700;
+
+
+
