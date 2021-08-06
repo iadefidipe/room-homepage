@@ -75,6 +75,25 @@ a {
   font-weight: 600;
 }
 
+p {
+  line-height: 1.25rem;
+  color: #a1a1a1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -1.67px;
+  color: black;
+  margin-bottom: 1.375rem;
+}
+
+h2 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
 .page-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,24 +112,24 @@ a {
 }
 
 .section-container--top {
-  -webkit-box-flex: 66.75%;
-      -ms-flex: 66.75%;
-          flex: 66.75%;
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
 }
 
 .section-container--bottom {
-  -webkit-box-flex: 33.25%;
-      -ms-flex: 33.25%;
-          flex: 33.25%;
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
 }
 
 .section-1 {
-  -webkit-box-flex: 1.3;
-      -ms-flex: 1.3;
-          flex: 1.3;
+  -webkit-box-flex: 1.32;
+      -ms-flex: 1.32;
+          flex: 1.32;
   background: url(../../images/desktop-image-hero-1.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 33.375rem;
+  background-size: cover;
   background-position: center;
   padding: 4rem 0 0 4rem;
 }
@@ -119,6 +138,58 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-2 .hero-text {
+  padding: 3.75rem 4.375rem 2.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: #a1a1a1;
+}
+
+.section-2 .hero-text a {
+  margin-top: 1.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  gap: 2.6875rem;
+}
+
+.section-2 .slider-button {
+  justify-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-2 .slider-button .btn {
+  background-color: black;
+  width: 5rem;
+  height: 5rem;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.section-2 .slider-button .btn:hover {
+  background-color: #454545;
 }
 
 .section-3 {
@@ -130,13 +201,14 @@ a {
 }
 
 .section-4 {
-  -webkit-box-flex: 1.5;
-      -ms-flex: 1.5;
-          flex: 1.5;
+  -webkit-box-flex: 1.2;
+      -ms-flex: 1.2;
+          flex: 1.2;
   display: -ms-grid;
   display: grid;
   place-content: center;
   padding: 0 3rem;
+  gap: 0.5625rem;
 }
 
 .section-5 {
@@ -169,7 +241,7 @@ a {
 }
 
 .nav__links a:hover::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 1rem;
   height: 0.125rem;
