@@ -144,7 +144,7 @@ h2{
 
     @include breakpoint-down(medium){
       background: url(../../images/mobile-image-hero-1.jpg);
-      // background-repeat: no-repeat;
+      background-repeat: no-repeat;
       background-size: 100%;
       background-position: center;
       // flex: 2;

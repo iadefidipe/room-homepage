@@ -156,6 +156,7 @@ h2 {
 @media (max-width: 1023px) {
   .section-1 {
     background: url(../../images/mobile-image-hero-1.jpg);
+    background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     min-height: 360px;
