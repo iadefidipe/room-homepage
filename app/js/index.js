@@ -11,7 +11,9 @@ let curSlide = 0
 const maxSlide = heroText.length
 
 
-btnRight.addEventListener('click', function(){
+// goto next slide
+
+const nextSlide = function(){
     curSlide++
     heroText.forEach(e => {
         e.classList.add("hidden")
@@ -27,10 +29,10 @@ btnRight.addEventListener('click', function(){
     })
 
     sectionOne.style.background = `url(../../images/desktop-image-hero-${curSlide+1}.jpg)` || `url(../../images/mobile-image-hero-${curSlide+1}.jpg)`
-    
-})
+}
 
-btnLeft.addEventListener('click', function(){
+// goto previous slide
+const prevSlide = function(){
     curSlide--
     heroText.forEach(e => {
         e.classList.add("hidden")
@@ -47,4 +49,9 @@ btnLeft.addEventListener('click', function(){
 
     sectionOne.style.background = `url(../../images/desktop-image-hero-${(curSlide < 0 ? curSlide*-1 : curSlide) + 1}.jpg)` || `url(../../images/mobile-image-hero-${(curSlide < 0 ? curSlide*-1 : curSlide) + 1}.jpg)`
     
-})
+}
+
+// event handlers
+btnRight.addEventListener('click', nextSlide)
+
+btnLeft.addEventListener('click', prevSlide)
