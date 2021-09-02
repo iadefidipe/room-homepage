@@ -26,7 +26,7 @@ btnRight.addEventListener('click', function(){
         
     })
 
-    sectionOne.style.background = `url(../../images/desktop-image-hero-${curSlide+1}.jpg)`
+    sectionOne.style.background = `url(../../images/desktop-image-hero-${curSlide+1}.jpg)` || `url(../../images/mobile-image-hero-${curSlide+1}.jpg)`
     
 })
 
@@ -45,6 +45,6 @@ btnLeft.addEventListener('click', function(){
         
     })
 
-    sectionOne.style.background = `url(../../images/desktop-image-hero-${(curSlide < 0 ? curSlide*-1 : curSlide) + 1}.jpg)`
+    sectionOne.style.background = `url(../../images/desktop-image-hero-${(curSlide < 0 ? curSlide*-1 : curSlide) + 1}.jpg)` || `url(../../images/mobile-image-hero-${(curSlide < 0 ? curSlide*-1 : curSlide) + 1}.jpg)`
     
 })
