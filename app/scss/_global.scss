@@ -239,10 +239,6 @@ h2{
   }
 
   @include breakpoint-down(medium){
-    // &-1, &-2, &-3, &-4, &-5{
-    //   flex: none;
-    // }
-
 
     &-3, &-5{
       background-size: 100%;
@@ -251,7 +247,6 @@ h2{
     &-4{
       min-height: rem(308);
     }
-
   
   }
 }
@@ -266,9 +261,6 @@ h2{
   @include breakpoint-down(medium){
     gap: rem(113);
     padding: rem(48) 0 0 rem(24);
-
-    // justify-content: flex-start;
-    // flex-direction: row-reverse;
   }
 
   &__logo{
@@ -315,4 +307,8 @@ h2{
       display:none;
   }
   
+}
+
+.hidden{
+  display:none;
 }
